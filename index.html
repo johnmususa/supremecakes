@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,6 +13,7 @@
 	<!------gooogle font icons link---------->
 	<script src="https://kit.fontawesome.com/b24f4d3eaf.js" crossorigin="anonymous"></script>
 	<!-----//////////////////////////-------->
+	<link rel="sortcut icon" href="images/logo.jpg">
 	<link rel="stylesheet" href="style.css">
 	<title>Supreme Cakes</title>
 </head>
@@ -21,21 +22,21 @@
 	<!----///////////////////////////////----->
 	<div class="header" id="#top">
 		<nav>
-			<div class="logo">
+			<div class="logo" title="logo">
 				<h1>
-					<i class="fa-solid fa-cake-candles"></i>
+					<i class="fa-solid fa-cake-candles" title="logo-icon"></i>
 					Supreme Cakes
 				</h1>
 			</div>
 			<input type="checkbox" name="" id="toggle">
 			<label for="toggle">
-				<i class="fa-solid fa-bars" class="menu-btn"></i>
+				<i class="fa-solid fa-bars" class="menu-btn" alt="menu"></i>
 			</label>
 
 			<div class="menu">
 				<ul>
 					<li>
-						<a href="#top">Home</a>
+						<a href="#top" class="act">Home</a>
 					</li>
 					<li>
 						<a href="#about-us">About</a>
@@ -46,14 +47,16 @@
 					<li>
 						<a href="#contact">Order</a>
 					</li>
+					<li>
+						<a href="#promo">Promotion</a>
+					</li>
 				</ul>
 			</div>
 			<div class="email-top">
 				<i class="fa-solid fa-envelope"></i>
-				<p>supremecakes021@gmail.com</p>
+				<p title="email" title="Email">supremecakes@gmail.com</p>
 			</div>
 		</nav>
-	
 	</div>
 	
 	<section id="main">
@@ -71,8 +74,9 @@
 		<div class="about-box">
 			<div class="text">
 				<h2>About us</h2>
-				<p>We are a small Business suited at Home with Years experience in the industry.we strive to be the best in our field and put our customers first.We are passionate about building good relationship with each and everyone creating an environment where everyone feel welcome.We work hard to ensure that your experience with us is perfect,and we are here to help you.Thank you for choosing us as your go-to provider,we look forward to serving you!</p>
-				<!--<p>We are a small home base business. We specialize in any celebration cakes like birthdays, anniversaries, weddings etc. Show us what you want and we will provide. A happy client brightens up our day.</p>-->
+				<hr class="solid-1" color="black">
+				<p>We are a small Business suited at Home with Years experience in the industry.we strive to be the best in our field and put our customers first.We are passionate about building good relationship with each and everyone creating an environment where everyone feel welcome.We work hard to ensure that your experience with us is perfect,and we are here to help you.Thank you for choosing us as your go-to provider,we look forward to serving you.Any Cakes, "Supreme Cakes" will achieve IT!!</p>
+				
 			</div>
 			<div class="cake-image">
 				<img src="images/about.jpg" alt="cake-image">
@@ -88,34 +92,60 @@
 	<section id="gallery">
 		<p>Welcome to Supreme Cakes your premeir destination for delicious cakes in Ocean View Cape Town Indulge in our delectable creations and elevate your celebrations with our exquisite confections.</p>
 
-		<div class="container">
-			<div class="item item-1"></div>
-			<div class="item item-2"></div>
-			<div class="item item-3"></div>
-		</div>
-		<div class="container">
-			<div class="item item-4"></div>
-			<div class="item item-5"></div>
-			<div class="item item-6"></div>
-		</div>
-		<div class="container">
-			<div class="item item-7"></div>
-			<div class="item item-8"></div>
-			<div class="item item-9"></div>
+		<div class="slider">
+            <div class="slider-container">
+                <div class="slide">
+                    <img src="images/banner.jpg">
+                </div>
+                <div class="slide">
+                    <img src="images/banner-2.jpg">
+                </div>
+                <div class="slide">
+                    <img src="images/img-7.jpg">
+                </div>
+                <div class="slide">
+                    <img src="images/img-6.jpg">
+                </div>
+                <div class="slide">
+                    <img src="images/img-1.jpg">
+                </div>
+                <div class="slide">
+                    <img src="images/img-2.jpg">
+                </div>
+                <div class="slide">
+                    <img src="images/img-3.jpg">
+                </div>
+                <div class="slide">
+                    <img src="images/img-4.jpg">
+                </div>
+                <div class="slide">
+                    <img src="images/img-5.jpg">
+                </div>
+            </div>
+        </div>
+
+		<div class="items-link">
+			<button class="btn-3">
+				<a href="#gallery">View all Cakes</a>
+			</button>		
 		</div>
 
-		<div class="items-btn">
-			<button class="btn-3">
-				<a href="#gallery">View all Items</a>
-			</button>
-				
+		<div id="promo">
+			<div class="promo-link">
+				<h1>Get Free 10% Off</h1>
+				<p>Get a free discount on your First Order specialy made just for joy</p>
+
+				<button class="promo-btn">
+					<a href="#promo">Get Discount</a>
+				</button>
+			</div>
 		</div>
 	</section>
 	<section id="pricing">
 		<h3>Price list <i class="fa-solid fa-hand-holding-dollar"></i></h3>
 		<div class="price-content">
 			<div class="price-card">
-				<img src="images/banner.jpg" alt="image">
+				<img src="images/img-5.jpg" alt="image">
 				<div class="price-text">
 					<h1>Basic Cake</h1>
 					<h2>R500</h2>
@@ -129,7 +159,7 @@
 				</div>
 			</div>
 			<div class="price-card">
-				<img src="images/banner-2.jpg" alt="image">
+				<img src="images/img-4.jpg" alt="image">
 				<div class="price-text">
 					<span>Popular</span>
 					<h1>Custom Cake</h1>
@@ -144,7 +174,7 @@
 				</div>
 			</div>
 			<div class="price-card">
-				<img src="images/banner-4.jpg" alt="image">
+				<img src="images/img-3.jpg" alt="image">
 				<div class="price-text">
 					<h1>Deluxe Cake</h1>
 					<h2>R1500</h2>
@@ -172,32 +202,30 @@
 
 			<input type="text" placeholder="Phone Number">
 
-			<textarea rows="4" cols="10" placeholder="Message"></textarea>
+			<textarea rows="4" cols="15" placeholder="Message"></textarea>
 
 			<input type="submit" value="Send" class="sub-btn">
 		</form>
 
-		<!--<div class="socials">
+		<div class="socials">
 			<ul>
-				<a href="#">
-					<i class="fa-brands fa-facebook"></i>
+				<a href="https://www.facebook.com/share/LfNA44zHdjjLvNkz/?mibextid=qi2Omg">
+					<i class="fa-brands fa-facebook"> Supreme Cakes</i>
 				</a>
 				<a href="#" class="app">
-					<i class="fa-brands fa-whatsapp" class="app"></i>
+					<i class="fa-brands fa-whatsapp" class="app"> 061 429 3008</i>
 				</a>
 			</ul>
-		</div>-->
+		</div>
 	</section>
 
 	<footer>
-		<h1><i class="fa-solid fa-cake-candles"></i> Supreme Cakes</h1>
+		<h1><i class="fa-solid fa-cake-candles"></i> Supreme Cakes by Raeezah</h1>
 		
 		<h3>Made by <a href="https://johnmususa.github.io/portfolio" class="owner" target="blank">John Mususa</a></h3>
 	</footer>
 	<a href="#top" class="gotopbr">
 		<i class="fa-solid fa-arrow-up-from-bracket"></i>
 	</a>
-
-
 </body>
 </html>
